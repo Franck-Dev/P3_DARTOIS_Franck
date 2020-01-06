@@ -4,192 +4,261 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<!-- Style général -->
 	<link rel="stylesheet" href="assets/css/Style.css">
 	
     <title>Les Films en Plein Air</title>
   </head>
   <body>
-	<div class="container">
+	<div class="container-fluid">
       <header class="row">
-        <div class="col-lg-10">
+        <div class="col-xs-11">
           <h1>Festival du Film en Plein Air</h1>
         </div>
-		<div class="col-lg-2">
-          <span>Login</span>
+		<div class="col-xs-1 p-0">
+          <button data-toggle="modal" href="#login" class="btn btn-primary">Login</button>
+			<div class="modal" id="login"><!-- Création modale pour login --> 
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" class="close" data-dismiss="modal">x</button>-->
+					<h4 class="modal-title">Plus d'informations</h4>
+				  </div>
+				  <div class="modal-body">
+					Form
+				  </div>
+				  <div class="modal-footer">
+					<button class="btn btn-info" data-dismiss="modal">Fermer</button>
+				  </div>
+				</div>
+			  </div>
+			</div><!-- Fin modale login -->
         </div>
 		<div class="col-lg-12">
           <h2>Slogan et Dates</h2>
         </div>
 		<div class="alert col-lg-12 alert-info"><!-- le contenu défilant -->
-			<div>Le message que l'on veut voir défilé horizontalement...</div>
+			<div>Le message que l'on veut voir défiler horizontalement...</div>
 		</div>
       </header>
  
       <div class="row">
-        <nav class="col-sm-2">
-			<div class="navbar navbar-default navbar-fixed-top">
-			  <div class="container">
-				<div class="navbar-header">
-				  <a class="navbar-brand" href="#">Menu</a>
+		<aside class="col-12 col-md-1 p-0 bg-dark"><!-- le menu en sidebar à gauche ou en top à partir de md-->
+		  <nav class="navbar navbar-expand navbar-dark bg-dark flex-md-column flex-row align-items-start">
+			<div class="collapse navbar-collapse">
+			  <ul class="flex-md-column navbar-nav justify-content-between">
+				<li class="nav-item">
+				   <a class="nav-link pl-0" href="#">Menu</a>
+				</li>			
+				<div class="btn-group"> 
+					<button class="btn btn-info btn-sm"><span class="glyphicon glyphicon-film"></span> Films</button>
+					<button class="btn btn-info btn-sm dropdown-toggle" data-toggle="dropdown"><span class=""></span></button>
+					<ul class="dropdown-menu bg-light">
+						<li class="dropdown-header"> Personnes</li>
+						<li><a href="#"><span class="glyphicon glyphicon-user"></span> Acteurs</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-screenshot"></span> Réalisateurs</a></li>
+						<li class="divider"></li>
+						<li class="dropdown-header"> Genres</li>
+						<li><a href="#"><span class="glyphicon glyphicon-book"></span> Sciences</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-cutlery"></span> Philosophique</a></li>
+					</ul>
 				</div>
 				<div class="btn-group"> 
-				  <button class="btn btn-info">Action</button>
-				  <button class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-				  <ul class="dropdown-menu">
-					<li class="dropdown-header"> Personnel</li>
-					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Dompteurs</a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-screenshot"></span> Chasseurs</a></li>
-					<li class="divider"></li>
-					<li class="dropdown-header"> Lieux</li>
-					<li><a href="#"><span class="glyphicon glyphicon-book"></span> Bibliothèques</a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-cutlery"></span> Restaurants</a></li>
-				  </ul>
+					<button class="btn btn-info btn-sm"><span class="glyphicon glyphicon-facetime-video"></span> Festival</button>
+					<button class="btn btn-info btn-sm dropdown-toggle" data-toggle="dropdown"><span class=""></span></button>
+					<ul class="dropdown-menu bg-light">
+						<li class="dropdown-header"> Organisation</li>
+						<li><a href="#"><span class="glyphicon glyphicon-user"></span> Horraire</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-screenshot"></span> Emplacement</a></li>
+						<li class="divider"></li>
+						<li class="dropdown-header"> Actualités</li>
+						<li><a href="#"><span class="glyphicon glyphicon-book"></span> Historiques</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-headphones"></span> Partage</a></li>
+						<li class="divider"></li>
+						<li class="dropdown-header"> Fréquentation</li>
+						<li><a href="#"><span class="glyphicon glyphicon-calendar"></span> Jours</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-blackboard"></span> Scéances</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-film"></span> Films</a></li>
+					</ul>
 				</div>
-			  </div>
+			  </ul>
 			</div>
-        </nav>
-        <section class="col-sm-10">
-          Page programmation
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="row">
-                <article class="col-sm-12">
-                  Date 1
-				  <div class="row">
-					<aside class="col-sm-4">
-					  Film 1
-						<div class="panel panel-primary">
-						  <div class="panel-heading">
-							<h3 class="panel-title">Titre</h3>
+		  </nav>
+    </aside>
+        <section class="col-md-11"><!-- le corps du site avec les pages onglets -->
+			<ul class="nav nav-pills">
+				<li class="active"><a href="#programme" data-toggle="tab">Page programmation</a></li>
+				<li><a href="#perso" data-toggle="tab">Ma Page</a></li>
+				<li><a href="#groupe" data-toggle="tab">Page Groupe</a></li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane active fade in" id="programme"><!-- Page Programmation -->
+						<div class="col-sm-12">
+						  <div class="row">
+							<article class="col-sm-12">
+							  Date 1
+							  <div class="row">
+								<aside class="col-sm-4">
+								  Scéance 1
+									<div class="panel panel-primary">
+									  <div class="panel-heading">
+										<h3 class="panel-title">Titre</h3>
+									  </div>
+									  <div class="panel-body">Contenu</div>
+									  <div class="panel-footer">Scéances</div>
+									</div>
+								</aside>
+								<aside class="col-sm-4">
+								  Scéance 2
+									<div class="media col-sm-12">
+									  <div class="media-left">
+										<iframe width="110" height="60" src="http://www.youtube.com/embed/VmnIeLmjuHA" frameborder="0" allowfullscreen></iframe>
+									  </div>
+									  <div class="media-body">
+										<h4 class="media-heading">Un super film</h4>
+										Admirez ce chef d'oeuvre...
+									  </div>
+									</div>
+								</aside>
+								<aside class="col-sm-4">
+								  Scéance 3
+								</aside>
+							  </div>
+							</article>
+							<article class="col-sm-12">
+							  Date 2
+							  <div class="row">
+								<aside class="col-sm-4">
+								  Scéance 1
+								</aside>
+								<aside class="col-sm-4">
+								  Scéance 2
+								</aside>
+								<aside class="col-sm-4">
+								  Scéance 3
+								</aside>
+							  </div>
+							</article>
+							<article class="col-sm-12">
+							  Date 3
+							  <div class="row">
+								<aside class="col-sm-4">
+								  Scéance 1
+								</aside>
+								<aside class="col-sm-4">
+								  Scéance 2
+								</aside>
+								<aside class="col-sm-4">
+								  Scéance 3
+								</aside>
+							  </div>
+							</article>
+							<article class="col-sm-12">
+							  Date 4
+							  <div class="row">
+								<aside class="col-sm-4">
+								  Scéance 1
+								</aside>
+								<aside class="col-sm-4">
+								  Scéance 2
+								</aside>
+								<aside class="col-sm-4">
+								  Scéance 3
+								</aside>
+							  </div>
+							</article>
 						  </div>
-						  <div class="panel-body">Contenu</div>
 						</div>
-					</aside>
-					<aside class="col-sm-4">
-					  Film 2
-						<div class="media col-sm-12">
-						  <div class="media-left">
-							<iframe width="110" height="60" src="http://www.youtube.com/embed/VmnIeLmjuHA" frameborder="0" allowfullscreen></iframe>
-						  </div>
-						  <div class="media-body">
-							<h4 class="media-heading">Un tigre domestique dans son canapé</h4>
-							Admirez ce noble animal...
-						  </div>
-						</div>
-					</aside>
-					<aside class="col-sm-4">
-					  Film 3
-					</aside>
-				  </div>
-                </article>
-                <article class="col-sm-12">
-                  Date 2
-				  <div class="row">
-					<aside class="col-sm-4">
-					  Film 1
-					</aside>
-					<aside class="col-sm-4">
-					  Film 2
-					</aside>
-					<aside class="col-sm-4">
-					  Film 3
-					</aside>
-				  </div>
-                </article>
-                <article class="col-sm-12">
-                  Date 3
-				  <div class="row">
-					<aside class="col-sm-4">
-					  Film 1
-					</aside>
-					<aside class="col-sm-4">
-					  Film 2
-					</aside>
-					<aside class="col-sm-4">
-					  Film 3
-					</aside>
-				  </div>
-                </article>
-                <article class="col-sm-12">
-                  Date 4
-				  <div class="row">
-					<aside class="col-sm-4">
-					  Film 1
-					</aside>
-					<aside class="col-sm-4">
-					  Film 2
-					</aside>
-					<aside class="col-sm-4">
-					  Film 3
-					</aside>
-				  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="col-sm-offset-2 col-sm-10">
-          Ma Page
-          <div class="row">
-            <article class="col-sm-6">
-              Article
-            </article>
-            <article class="col-sm-6">
-              Article
-            </article>
-            <article class="col-sm-6">
-              Article
-            </article>
-            <article class="col-sm-6">
-              Article
-            </article>
-            <article class="col-sm-6">
-              Article
-            </article>
-            <article class="col-sm-6">
-              Article
-            </article>
-          </div>
-        </section>
-		<section class="col-sm-offset-2 col-sm-10">
-          Page Groupe
-          <div class="row">
-            <article class="col-sm-6">
-              Article
-            </article>
-            <article class="col-sm-6">
-              Article
-            </article>
-            <article class="col-sm-6">
-              Article
-            </article>
-            <article class="col-sm-6">
-              Article
-            </article>
-            <article class="col-sm-6">
-              Article
-            </article>
-            <article class="col-sm-6">
-              Article
-            </article>
-          </div>
+				</div>
+				
+				<div class="tab-pane fade in" id="perso"><!-- Page Perso -->
+					<div class="row">
+						<article class="col-sm-4">
+						  Film 1
+						</article>
+						<aside class="col-sm-8">
+						  Article/Heure/Notation/Partage
+						</aside>
+					</div>
+					<div class="row">
+						<article class="col-sm-4">
+						  Film 5
+						</article>
+						<aside class="col-sm-8">
+						  Article/Heure/Notation/Partage
+						</aside>
+					</div>
+					<div class="row">
+						<article class="col-sm-4">
+						  Film 8
+						</article>
+						<aside class="col-sm-8">
+						  Article/Heure/Notation/Partage
+						</aside>
+					</div>
+					<div class="row">
+						<article class="col-sm-4">
+						  Film 9
+						</article>
+						<aside class="col-sm-8">
+						  Article/Heure/Notation/Partage
+						</aside>
+					</div>
+				</div>
+				<div class="tab-pane fade in" id="groupe"><!-- Page Groupe -->
+					<div class="row">
+						<article class="col-sm-4">
+						  Groupe
+						</article>
+						<aside class="col-sm-4">
+						  Film
+						</aside>
+						<aside class="col-sm-2">
+						  Nombre
+						</aside>
+						<aside class="col-sm-2">
+						  Statut
+						</aside>
+					</div>
+					<div class="row">
+						<article class="col-sm-4">
+						  Groupe
+						</article>
+						<aside class="col-sm-4">
+						  Film
+						</aside>
+						<aside class="col-sm-2">
+						  Nombre
+						</aside>
+						<aside class="col-sm-2">
+						  Statut
+						</aside>
+					</div>
+				</div>
+			<div class="tab-content">
         </section>
       </div>
-      <footer class="row">
+      <footer class="row"><!-- Pied de page avec actus et contact -->
         <div class="col-lg-12">
-          Pied de page
+			<article class="col-sm-8">
+				Actu
+			</article>
+			<article class="col-sm-4">
+				Renseignements
+			</article>
         </div>
       </footer>
     </div>
     <!-- Optional JavaScript -->
-	<script src="assets/js/jquery-3.4.1.min.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <!-- <script src="assets/js/jquery-3.4.1.min.js"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- <script src="assets/js/bootstrap.min.js"></script>-->
   </body>
 </html>
