@@ -27,3 +27,11 @@ body {
 .navbar,.collapse{
 	align-self: center;
 }
+#Date1,#Date2,#Date3,#Date4{
+	margin:	5px;
+	font-size:	1.5em;
+}
+#Sceance1,#Sceance2,#Sceance3,#Sceance4{
+	border: none;
+	padding:	5px;
+}

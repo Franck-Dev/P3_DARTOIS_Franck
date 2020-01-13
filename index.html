@@ -30,7 +30,19 @@
 					<h4 class="modal-title">Plus d'informations</h4>
 				  </div>
 				  <div class="modal-body">
-					Form
+					<div class="modal-body row">
+						<form class="col" action="test.php">
+						  <div class="form-group">
+							<label for="nom" class="form-control-label">Nom</label>
+							<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
+						  </div>
+						  <div class="form-group">
+							<label for="email" class="form-control-label">Email</label>
+							<input type="email" class="form-control" name="email" id="email" placeholder="Votre Email">
+						  </div>
+						  <button type="submit" class="btn btn-primary pull-right">Envoyer</button>
+						</form>
+					  </div>
 				  </div>
 				  <div class="modal-footer">
 					<button class="btn btn-info" data-dismiss="modal">Fermer</button>
@@ -98,77 +110,106 @@
 			</ul>
 			<div class="tab-content">
 				<div class="tab-pane active fade in" id="programme"><!-- Page Programmation -->
-						<div class="col-sm-12">
+						<div class="col-sm-12 p-5">
 						  <div class="row">
-							<article class="col-sm-12">
+							<article class="col-sm-12" id="Date1">
 							  Date 1
 							  <div class="row">
-								<aside class="col-sm-4">
-								  Scéance 1
+								<aside class="col-md-4" id="Sceance1">
+								  Horraire Scéance 1
 									<div class="panel panel-primary">
 									  <div class="panel-heading">
 										<h3 class="panel-title">Titre</h3>
 									  </div>
-									  <div class="panel-body">Contenu</div>
-									  <div class="panel-footer">Scéances</div>
+									  <div class="panel-body">Image</div>
+									  <div class="panel-footer">Description</div>
 									</div>
 								</aside>
-								<aside class="col-sm-4">
-								  Scéance 2
+								<aside class="col-md-4" id="Sceance2">
+								  Horraire Scéance 2
 									<div class="media col-sm-12">
 									  <div class="media-left">
-										<iframe width="110" height="60" src="http://www.youtube.com/embed/VmnIeLmjuHA" frameborder="0" allowfullscreen></iframe>
+										<iframe width="200" height="160" src="http://www.youtube.com/embed/RpK_6AriFXQ" frameborder="0" allowfullscreen></iframe>
 									  </div>
 									  <div class="media-body">
-										<h4 class="media-heading">Un super film</h4>
+										<h3 class="media-heading">Un super film</h3>
 										Admirez ce chef d'oeuvre...
 									  </div>
 									</div>
 								</aside>
-								<aside class="col-sm-4">
-								  Scéance 3
+								<aside class="col-md-4" id="Sceance3">
+								  Horraire Scéance 3
+									<div class="list-group">
+									  <a href="#Film" class="list-group-item active" data-toggle="modal">
+										<h3 class="list-group-item-heading">Pas mal non plus</h3>
+										<p class="list-group-item-text pull-right">A découvrir au plus vite.....</p>
+										<img src="assets/images/t1.jpg">
+									  </a>
+									</div>
+									<div class="modal" id="Film"><!-- Création modale pour description du film ou enregistrement --> 
+									  <div class="modal-dialog">
+										<div class="modal-content">
+										  <div class="modal-header">
+											<!--<button type="button" class="close" data-dismiss="modal">x</button>-->
+											<h3 class="modal-title">Pas mal non plus</h3>
+										  </div>
+										  <div class="modal-body">
+											<img src="assets/images/t1.jpg">
+											<p class="text pull-right">A découvrir au plus vite, ce film dramatique primé au Festival de Cannes</p>
+											<p class="text pull-left"><strong>Durée : </strong>02h12mn</p>
+											<p class="text pull-left"><strong>Réalisateur : </strong>Jack ASSURE</p>
+											<p class="text pull-left"><strong>Acteurs : </strong>JToi, Moi, et les autres....</p>
+											<a href="#"><span class="glyphicon glyphicon-hand-right pull-left"></span>526</a>
+										  </div>
+										  <div class="modal-footer">
+											<a href="#"><span class="glyphicon glyphicon-plus pull-left"></span>S'enregistrer</a>
+											<button class="btn btn-info" data-dismiss="modal">Fermer</button>
+										  </div>
+										</div>
+									  </div>
+									</div><!-- Fin modale login -->
 								</aside>
 							  </div>
 							</article>
-							<article class="col-sm-12">
+							<article class="col-sm-12" id="Date2">
 							  Date 2
 							  <div class="row">
-								<aside class="col-sm-4">
-								  Scéance 1
+								<aside class="col-sm-4" id="Sceance1">
+								  Horraire Scéance 1
 								</aside>
-								<aside class="col-sm-4">
-								  Scéance 2
+								<aside class="col-sm-4" id="Sceance2">
+								  Horraire Scéance 2
 								</aside>
-								<aside class="col-sm-4">
-								  Scéance 3
+								<aside class="col-sm-4" id="Sceance3">
+								  Horraire Scéance 3
 								</aside>
 							  </div>
 							</article>
-							<article class="col-sm-12">
+							<article class="col-sm-12" id="Date3">
 							  Date 3
 							  <div class="row">
-								<aside class="col-sm-4">
-								  Scéance 1
+								<aside class="col-sm-4" id="Sceance1">
+								  Horraire Scéance 1
 								</aside>
-								<aside class="col-sm-4">
-								  Scéance 2
+								<aside class="col-sm-4" id="Sceance2">
+								  Horraire Scéance 2
 								</aside>
-								<aside class="col-sm-4">
-								  Scéance 3
+								<aside class="col-sm-4" id="Sceance3">
+								  Horraire Scéance 3
 								</aside>
 							  </div>
 							</article>
-							<article class="col-sm-12">
+							<article class="col-sm-12" id="Date4">
 							  Date 4
 							  <div class="row">
-								<aside class="col-sm-4">
-								  Scéance 1
+								<aside class="col-sm-4" id="Sceance1">
+								  Horraire Scéance 1
 								</aside>
-								<aside class="col-sm-4">
-								  Scéance 2
+								<aside class="col-sm-4" id="Sceance2">
+								  Horraire Scéance 2
 								</aside>
-								<aside class="col-sm-4">
-								  Scéance 3
+								<aside class="col-sm-4" id="Sceance3">
+								  Horraire Scéance 3
 								</aside>
 							  </div>
 							</article>
