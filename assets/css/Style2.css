@@ -1,0 +1,79 @@
+/*@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);*/
+body,html {
+    height: 100%;
+}
+
+/* must be relative for scrollspy to work */
+body {
+    position: relative;
+}
+
+.vh-50 {
+    min-height: 50vh;
+}
+
+.navbar.affix-top,
+.navbar.affix-bottom {
+  position: static;
+}
+
+.navbar.affix{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+  transition: all .35s ease;
+}
+
+#sidemenu.affix-top, #sidemenu.affix {
+  position: static;
+}
+
+#sidemenu.affix-bottom {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+    #sidemenu.affix {
+      position: fixed;
+      top: 40px;
+    }
+}
+
+.anchor{
+  display: block;
+  height: 70px;
+  margin-top: -70px;
+  visibility: hidden;
+}
+
+footer a {
+    color: #ccc;
+}
+footer a:hover,
+footer a:focus{
+    color: #eee;
+}
+.panel{
+	padding:	0px;
+}
+.item.img{
+	height:	850px;
+	width:	550px;
+}
+#sidemenu:hover{
+	color: #eee;
+	display:block;
+	position:relative;
+}
+.jumbotron{
+	background-image:	url(../images/paris-etoile.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+}
+.fade:not(.show) {
+	opacity:	1;
+	position:	Relative;
+	top:	50px;
+}

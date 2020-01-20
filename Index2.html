@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/3.4.1/css/font-awesome.min.css" rel="stylesheet">-->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- Style général -->
+	<link rel="stylesheet" href="assets/css/Style2.css">
+	
+    <title>Les Films en Plein Air</title>
+  </head>
+  <body>
+	<div class="container-fluid"><!-- Page -->
+		<div class="jumbotron mb-0 d-flex align-items-center flex-column justify-content-center vh-50 bg-dark text-white" id="header"><!-- En tête -->
+			<h1 class="display-3">Festival du Film en Plein Air</h1>
+			<p>Le cinéma avec et sous les étoiles, une expérience inoubliable .</p>
+			<p class="lead">
+				<a class="btn btn-outline-secondary btn-lg" href="#" role="button">A Propos</a>
+			</p>
+		</div>
+		<nav class="navbar navbar-light navbar-expand-lg bg-primary" style="-webkit-margin-after-collapse: discard;">
+<!-- Navbar générale du haut -->
+			<div class="container bg-faded">
+				<a class="navbar-brand" href="#">Logo</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="navbar-collapse collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a href="#" class="nav-link">En ce moment</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Plan du site</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Presse</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Admin</a></li>
+					</ul>
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a href="#modal1" data-toggle="modal" class="nav-link">Login</a></li>
+					</ul>
+					<div id="modal1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h3 id="myModalLabel">Hello.</h3>
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+								</div>
+								<div class="modal-body">
+
+									<div class="form-group row">
+										<label for="example-text-input" class="col-2 col-form-label">Nom</label>
+										<div class="col-10">
+											<input class="form-control" type="text" value="Mikey" id="example-text-input">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="example-email-input" class="col-2 col-form-label">Email</label>
+										<div class="col-10">
+											<input class="form-control" type="email" value="email@example.com" id="example-email-input">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="example-tel-input" class="col-2 col-form-label">Tel :</label>
+										<div class="col-10">
+											<input class="form-control" type="tel" value="" id="example-tel-input">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button class="btn" data-dismiss="modal" aria-hidden="true">Fermer</button>
+									<button class="btn btn-primary">Enregistrer</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="container_fluid bg-dark" id="content">
+			<div class="row h-100 mt-5 p-5">
+				<aside class="col-md-2">
+					<div class="mt-5 mb-3" id="sidemenu"><!-- Menu de navigation a gauche -->
+						<ul class="nav nav-pills flex-md-column flex-row justify-content-between">
+							<li class="nav-item dropdown">
+								<a href="#sec1" class="nav-link active dropdown-toggle" data-toggle="Dropdown">Date 1</a></li>
+								<ul class="nav flex-md-column ml-2 hidden-xs" >
+									<li class="nav-item"><a href="#sec1a" class="nav-link">Film 1</a></li>
+									<li class="nav-item"><a href="#sec1b" class="nav-link">Film 2</a></li>
+									<li class="nav-item"><a href="#sec1c" class="nav-link">Film 3</a></li>
+								</ul>
+							<li class="nav-item dropdown">
+								<a href="#sec2" class="nav-link dropdown-toggle" data-toggle="Dropdown">Date 2</a></li>
+								<ul class="nav flex-md-column ml-2 hidden-xs">
+									<li class="nav-item"><a href="#sec2a" class="nav-link">Film 1</a></li>
+									<li class="nav-item"><a href="#sec2b" class="nav-link">Film 2</a></li>
+									<li class="nav-item"><a href="#sec2c" class="nav-link">Film 3</a></li>
+								</ul>
+							<li class="nav-item dropdown">
+								<a href="#sec3" class="nav-link dropdown-toggle" data-toggle="Dropdown">Date 3</a>
+								<ul class="nav flex-md-column ml-2 hidden-xs">
+									<li class="nav-item"><a href="#sec3a" class="nav-link">Film 1</a></li>
+									<li class="nav-item"><a href="#sec3b" class="nav-link">Film 2</a></li>
+									<li class="nav-item"><a href="#sec3c" class="nav-link">Film 3</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- Fin menu de navigation -->
+				</aside>
+				<main class="col py-5">
+					<div class="row p-5">
+						<div class="col"><!-- Onglets de page -->
+							<ul class="nav nav-tabs small" role="tablist">
+								<li class="nav-item"><a class="nav-link text-uppercase active" data-toggle="tab" href="#tab1" role="tab">Accueil</a></li>
+								<li class="nav-item ml-auto"><a class="nav-link text-uppercase" data-toggle="tab" href="#tab2" role="tab">Liste Films</a></li>
+								<li class="nav-item"><a class="nav-link text-uppercase" data-toggle="tab" href="#tab3" role="tab">Actualités</a></li>
+							</ul>
+							<div class="tab-content py-3">
+								<div class="tab-pane active" id="tab1" role="tabpanel">
+									<h2 class="mb-3">Programmation</h2>
+									<div class="container">
+									  <!--<h2>Carousel Example</h2>-->
+									  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+										<!-- Indicators -->
+										<ol class="carousel-indicators">
+										  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+										  <li data-target="#myCarousel" data-slide-to="1"></li>
+										  <li data-target="#myCarousel" data-slide-to="2"></li>
+										</ol>
+
+										<!-- Wrapper for slides -->
+										<div class="carousel-inner">
+										  <div class="item active">
+											<img src="assets\images\fond-de-ciel-étoilé.jpg" alt="Date 1" style="width:100%;">
+											<div class="carousel-caption d-webkit-box d-md-block">
+												<h1 class="title">Date 1</h1>
+												<span class="anchor" id="sec1"></span>
+												<div class="col-md-12">
+												<h5>Film 1</h5>
+													<div class="panel panel-primary text-center col-md-4">
+														<div class="panel-heading">
+															<h3 class="panel-title">Titre</h3>
+															<span class="pull-right clickable"><i class="glyphicon glyphicon-plus"></i></span>
+														</div>
+														<div class="panel-body">Image</div>
+														<div class="panel-footer">Horraire</div>
+													</div>
+													<div class="col-md-8">
+														<p>Résumé du film .....</p>
+													</div>
+												</div>
+												<span class="anchor" id="sec1b"></span>
+												<div class="col-md-12">
+												<h5>Film 2</h5>
+													<div class="col-md-8">
+														<p>Résumé du film .....</p>
+													</div>
+													<div class="panel panel-primary text-center col-md-4">
+														<div class="panel-heading">
+															<h3 class="panel-title">Titre</h3>
+														</div>
+														<div class="panel-body">Image</div>
+														<div class="panel-footer">Horraire</div>
+													</div>
+												</div>
+												<span class="anchor" id="sec1c"></span>
+												<div class="col-md-12">
+												<h5>Film 3</h5>
+													<div class="panel panel-primary text-center col-md-4">
+														<div class="panel-heading">
+															<h3 class="panel-title">Titre</h3>
+														</div>
+														<div class="panel-body">Image</div>
+														<div class="panel-footer">Horraire</div>
+													</div>
+													<div class="col-md-8">
+														<p>Résumé du film .....</p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										  <div class="item">
+											<img src="assets\images\ciel-etoile1.jpg" alt="Date 2" style="width:100%;height:50%;">
+											<div class="carousel-caption d-inlien-flex d-md-block">
+												<h1 class="title">Date 2</h1>
+												<span class="anchor" id="sec2"></span>
+												<h5 class="mt-4">Film 1</h5>
+													<div class="list-group">
+													  <a href="#Film" class="list-group-item active" data-toggle="modal">
+														<h3 class="list-group-item-heading">Pas mal non plus</h3>
+														<p class="list-group-item-text pull-right">A découvrir au plus vite.....</p>
+														<img src="assets\images\t1.jpg">
+													  </a>
+													</div>
+											</div>
+										  </div>
+										
+										  <div class="item">
+											<img src="assets\images\Ciel-etoile3.jpeg" alt="Date 3" style="width:100%;">
+											<div class="carousel-caption d-inlien-flex d-md-block">
+												<h1 class="title">Date 3</h1>
+												<span class="anchor" id="sec3"></span>
+												<h5 class="mt-4">Film 1</h5>
+													  <div class="media-left">
+														<iframe width="200" height="160" src="http://www.youtube.com/embed/RpK_6AriFXQ" frameborder="0" allowfullscreen></iframe>
+													  </div>
+													  <div class="media-body">
+														<h3 class="media-heading">Un super film</h3>
+														Admirez ce chef d'oeuvre...
+													  </div>
+											</div>
+										  </div>
+										</div>
+
+										<!-- Left and right controls -->
+										<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+										  <span class="glyphicon glyphicon-chevron-left"></span>
+										  <span class="sr-only">Previous</span>
+										</a>
+										<a class="right carousel-control" href="#myCarousel" data-slide="next">
+										  <span class="glyphicon glyphicon-chevron-right"></span>
+										  <span class="sr-only">Next</span>
+										</a>
+									  </div>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab2" role="tabpanel">
+									<div class="card border-primary mb-3">
+										<div class="card-body">
+											<h3 class="card-title">Film 1</h3>
+											<p class="card-text">Résumé....</p>
+											<a href="#" class="btn btn-outline-secondary">Détails</a>
+											<a href="#" class="btn btn-outline-info"><i class="fa fa-registered">Register</i></a>
+											<a href="#" class="btn btn-outline-Success"><i class="fa fa-thumbs-up">Like</i></a>
+											<div class="container">
+												<!--GRID ROW-->
+												<div class="row mt-4">
+												  <!--FIRST CARD-->
+												  <div class="col-md-4">
+													<div class="card">
+													  <a href="#" class="waves-light">
+														<div class="card-body info-color text-center">
+														  <i class="fa fa-eye white-text fa-3x"></i>
+														</div>
+													  </a>
+													  <div class="card-footer">
+														<div class="row">
+														  <div class="col-md-6 border-right text-center font-weight-bold">
+														  <i class="fa fa-thumbs-up">28K</i>
+														  </div>
+														  <div class="col-md-6 border-left text-center font-weight-bold">
+															<i class="fa fa-registered">36K</i>
+														  </div>
+														</div>
+													  </div>
+													</div>
+												  </div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card border-primary mb-3">
+										<div class="card-body">
+											<h3 class="card-title">Film 2</h3>
+											<p class="card-text">Résumé....</p>
+											<a href="#" class="btn btn-outline-secondary">Détails</a>
+										</div>
+									</div>
+									<div class="card border-primary mb-3">
+										<div class="card-body">
+											<h3 class="card-title">Film 3</h3>
+											<p class="card-text">Résumé....</p>
+											<a href="#" class="btn btn-outline-secondary">Détails</a>
+										</div>
+									</div>
+									<div class="card border-primary mb-3">
+										<div class="card-body">
+											<h3 class="card-title">Film 4</h3>
+											<p class="card-text">Résumé....</p>
+											<a href="#" class="btn btn-outline-secondary">Détails</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane text-white" id="tab3" role="tabpanel">
+									<h4>Le Festival</h4>
+									<p>Historique</p>
+
+									<p>Le mot du président</p>
+
+									<p>Les devoirs/Sécurité/Organisation</p>
+
+								</div>
+							</div>
+						</div><!-- Fin Onglets de page -->
+						<div class="col-lg-3 col-12"><!-- Partie pour les partenires -->
+							<div class="card bg-faded border-0 mb-3 col-lg-12 col-sm-4 col-xs-6">
+								<div class="card-body">
+									<h3 class="card-title">Partenaire 1</h3>
+									<p class="card-text">Annonce</p>
+									<a href="#" class="btn btn-outline-secondary">Site</a>
+								</div>
+							</div>
+							<div class="card bg-faded border-0 mb-3 col-lg-12 col-sm-4 col-xs-6">
+								<div class="card-body">
+									<h3 class="card-title">Partenaire 2</h3>
+									<p class="card-text">Annonce</p>
+									<a href="#" class="btn btn-outline-secondary">Lien</a>
+								</div>
+							</div>
+							<div class="card bg-faded border-0 mb-3 col-lg-12 col-sm-4 col-xs-6">
+								<div class="card-body">
+									<h3 class="card-title">Partenaire 3</h3>
+									<p class="card-text">Annonce</p>
+									<a href="#" class="btn btn-outline-secondary">Site</a>
+								</div>
+							</div>
+						</div><!-- Fin partenaires -->
+					</div>
+				</main>
+			</div>
+		</div>
+		
+		<footer class="bg-success text-white-50 py-4"><!-- Pied de page -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-3 pl-0">
+						<ul class="nav flex-column">
+							<li class="nav-item"><a href="#" class="nav-link">Plan</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Commentaires</a></li>
+							
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-3 pl-0">
+						<ul class="nav flex-column">
+							<li class="nav-item"><a href="#" class="nav-link">Equipe</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-3 pl-0">
+						<ul class="nav flex-column">
+							<li class="nav-item"><a href="#" class="nav-link">Charte graphique</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Legal</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 ml-auto text-right">
+						<small class="text-uppercase">Partagez-nous</small>
+						<ul class="nav justify-content-end">
+							<li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-pinterest fa-lg"></i></a></li>
+							<li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-twitter fa-lg"></i></a></li>
+							<li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-instagram fa-lg"></i></a></li>
+							<li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-facebook fa-lg"></i></a></li>
+							<li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-skype fa-lg"></i></a></li>
+						</ul>
+					</div>
+					<div class="col-12 text-right small">
+						@2020 Tous droits résevés
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+<script>
+ $('.navbar').affix({
+    offset:{
+        top: $('#header').outerHeight(),
+        bottom: $('#header').outerHeight() - 50
+    }
+});
+
+$('#sidemenu').affix({
+    offset:{
+        top: $('#header').outerHeight(),
+        bottom: ($('footer').height()-$('#header').height()) + $('#sidemenu').height()
+    }
+});
+</script>
